@@ -1,3 +1,26 @@
-.core-layout{
-    background-color: red;
+.core-layout {
+  background-color: #191923;
+  height: 100vh;
+  width: 100vw;
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #54595f;
+    height: 100%;
+    justify-content: space-between;
+    &-general {
+      background-color: red;
+      width: 25%;
+    }
+    &-main {
+      background-color: green;
+      flex: 1;
+      margin: 0 3rem;
+    }
+    &-nav {
+      background-color: yellow;
+      width: 5%;
+    }
+  }
 }
