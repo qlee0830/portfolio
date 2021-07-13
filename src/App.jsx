@@ -1,9 +1,10 @@
 import React from 'react';
-import Login from './pages/Login';
+import CoreLayout from './shared/layout/CoreLayout';
 export default function App() {
   return (
     <div>
-      <Login />
+      <CoreLayout />
+      this is home
     </div>
   );
 }
