@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   color: white;
+  height: 100vh;
   &-badge {
     width: 100%;
     background-color: blue;
@@ -16,20 +16,24 @@
       margin: 0.8rem 0;
     }
   }
-  &-region {
-    background-color: purple;
-    height: 15rem;
-  }
-  &-languages {
-    background-color: cadetblue;
-    height: 15rem;
-  }
-  &-skills {
+  &-general {
     flex: 1;
-    background-color: orange;
+    overflow: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    &__basicInfo {
+    }
+    &__languages {
+      height: 15rem;
+    }
+    &__skills {
+      flex: 1;
+      background-color: orange;
+    }
   }
   &-contacts {
-    height: 15rem;
+    height: 5rem;
     background-color: salmon;
   }
 }
