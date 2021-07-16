@@ -6,7 +6,7 @@
   height: 100vh;
   &-badge {
     width: 100%;
-    background-color: blue;
+    background-color: #2b2b2b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,25 +15,64 @@
     h3 {
       margin: 0.8rem 0;
     }
+    span {
+      color: #999999;
+    }
   }
   &-general {
     flex: 1;
     overflow: auto;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+    background-color: #252525;
     &__basicInfo {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          color: #999999;
+        }
+      }
     }
     &__languages {
-      height: 15rem;
+      flex: 1;
+      .content {
+        display: flex;
+        justify-content: space-between;
+        .lang {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
     &__skills {
       flex: 1;
-      background-color: orange;
+      .content {
+        display: flex;
+        flex-direction: column;
+        // .MuiLinearProgress-bar {
+        //   background-color: red;
+        // }
+        .skill-details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0px 5px;
+        }
+      }
     }
   }
   &-contacts {
-    height: 5rem;
-    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: #2b2b2b;
+    a {
+      margin: 5px;
+      color: white;
+    }
   }
 }

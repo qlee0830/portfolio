@@ -41,12 +41,14 @@ export default function Info() {
           alt="Remy Sharp"
           src="https://cdn.vox-cdn.com/thumbor/8euwZ9X8Mp64tTAbF3AxZdb_NG4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22657276/1322729766.jpg"
         />
-        <h3>Anh Tu Le</h3>
+        <h3>Quoc Ly</h3>
         <span>Full-stack developer</span>
       </div>
       <div className="info-general">
         <BasicInfo />
+        <hr />
         <Languages />
+        <hr />
         <CodingSkills />
       </div>
       <Contacts />
