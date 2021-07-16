@@ -5,7 +5,7 @@ export default function Languages() {
   return (
     <div className="info-general__languages">
       <h3>Languages</h3>
-      <div className="content">
+      <div className="lang-box">
         {list.map((item) => (
           <div className="lang">
             <Box position="relative" display="inline-flex">

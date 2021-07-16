@@ -9,7 +9,7 @@ export default function CodingSkills() {
       <div className="content">
         {list.map((item) => (
           <div className="skill">
-            <div className="skill-details">
+            <div className="skill-heading">
               <h5>{item.name}</h5>
               <span>{item.percentage}</span>
             </div>
