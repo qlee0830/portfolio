@@ -6,14 +6,19 @@
  * @copyright Vertics Oy 2021
  */
 
-import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import Avatar from "@material-ui/core/Avatar";
+import { makeStyles } from "@material-ui/core/styles";
+
+import BasicInfo from "../../components/BasicInfo";
+import Languages from "../../components/Languages";
+import CodingSkills from "../../components/CodingSkills";
+import Contacts from "../../components/Contacts";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    '& > *': {
+    display: "flex",
+    "& > *": {
       margin: theme.spacing(1),
     },
   },
@@ -39,10 +44,12 @@ export default function Info() {
         <h3>Anh Tu Le</h3>
         <span>Full-stack developer</span>
       </div>
-      <div className="info-region"></div>
-      <div className="info-languages"></div>
-      <div className="info-skills"></div>
-      <div className="info-contacts"></div>
+      <div className="info-general">
+        <BasicInfo />
+        <Languages />
+        <CodingSkills />
+      </div>
+      <Contacts />
     </div>
   );
 }

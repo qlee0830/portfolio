@@ -5,11 +5,8 @@
  *
  * @copyright Vertics Oy 2021
  */
-import React from 'react';
+import React from "react";
 
 export default function Badge() {
-  return (
-    <div className="badge">
-    </div>
-  );
+  return <div className="badge"></div>;
 }
