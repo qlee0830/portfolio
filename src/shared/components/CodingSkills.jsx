@@ -1,6 +1,5 @@
 import React from "react";
-
-import { LinearProgress, Box } from "@material-ui/core";
+import LinearProgressItem from "./LinearProgressItem";
 
 export default function CodingSkills() {
   return (
@@ -8,17 +7,7 @@ export default function CodingSkills() {
       <h3>Coding</h3>
       <div className="content">
         {list.map((item) => (
-          <div className="skill">
-            <div className="skill-heading">
-              <h5>{item.name}</h5>
-              <span>{item.percentage}</span>
-            </div>
-            <Box display="flex" alignItems="center">
-              <Box width="100%" mr={1}>
-                <LinearProgress variant="determinate" value={item.percentage} />
-              </Box>
-            </Box>
-          </div>
+          <LinearProgressItem item={item} />
         ))}
       </div>
     </div>
