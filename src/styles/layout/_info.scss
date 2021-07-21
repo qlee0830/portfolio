@@ -3,11 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: aliceblue;
-  background: linear-gradient(
-    159deg,
-    rgba(30, 30, 40, 0.98) 0%,
-    rgba(28, 28, 35, 0.98) 100%
-  );
+  background: $info-background;
   height: 100vh;
   &-badge {
     width: 100%;
