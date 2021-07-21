@@ -10,7 +10,7 @@ export default function CircularProgressItem({ item }) {
   }, [value]);
 
   return (
-    <div className="lang">
+    <div className="circular-progress-item">
       <Box position="relative" display="inline-flex">
         <CircularProgress variant="determinate" value={value} />
         <Box

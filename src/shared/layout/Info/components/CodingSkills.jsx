@@ -1,5 +1,5 @@
 import React from "react";
-import LinearProgressItem from "./LinearProgressItem";
+import LinearProgressItem from "./../../../components/LinearProgressItem";
 
 export default function CodingSkills() {
   return (

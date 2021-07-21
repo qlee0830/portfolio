@@ -1,0 +1,14 @@
+.linear-progress-item{
+    .MuiLinearProgress-colorPrimary {
+        background-color: rgb(85, 85, 85);
+      }
+      .MuiLinearProgress-bar {
+        background-color: #ffc107;
+      }
+      .skill-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 5px;
+      }
+}
