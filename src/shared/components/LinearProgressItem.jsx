@@ -10,7 +10,7 @@ export default function LinearProgressItem({ item }) {
   }, [value]);
 
   return (
-    <div className="skill">
+    <div className="linear-progress-item">
       <div className="skill-heading">
         <h5>{item.name}</h5>
         <span>{Math.round(value)}</span>

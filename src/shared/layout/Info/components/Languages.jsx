@@ -1,5 +1,5 @@
 import React from 'react';
-import CircularProgressItem from './../components/CircularProgressItem';
+import CircularProgressItem from '../../../components/CircularProgressItem';
 export default function Languages() {
   return (
     <div className="info-general__languages">

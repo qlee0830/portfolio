@@ -10,9 +10,9 @@ import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 
-import BasicInfo from "../../components/BasicInfo";
-import Languages from "../../components/Languages";
-import CodingSkills from "../../components/CodingSkills";
+import BasicInfo from "./components/BasicInfo";
+import Languages from "./components/Languages";
+import CodingSkills from "./components/CodingSkills";
 import Contacts from "../../components/Contacts";
 
 const useStyles = makeStyles((theme) => ({
