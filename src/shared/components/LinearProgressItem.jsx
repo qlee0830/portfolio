@@ -13,7 +13,7 @@ export default function LinearProgressItem({ item }) {
     <div className="linear-progress-item">
       <div className="skill-heading">
         <h5>{item.name}</h5>
-        <span>{Math.round(value)}</span>
+        <span>{Math.round(value) + " %"}</span>
       </div>
       <Box display="flex" alignItems="center">
         <Box width="100%" mr={1}>

@@ -6,21 +6,21 @@
  * @copyright Vertics Oy 2021
  */
 
-import React, { useState } from 'react';
-import Info from './Info';
-import Menu from './Menu';
+import React, { useState } from "react";
+import Info from "./Info";
+import Menu from "./Menu";
 
 export default function CoreLayout() {
   const [isOpen, setIsOpen] = useState(false);
   const onToggle = () => {
-    console.log('av');
+    console.log("av");
     setIsOpen(!isOpen);
   };
-  const infoFakeClass = ['core-layout__content-infoFake'];
-  const menuClass = ['core-layout__content-menu'];
+  const infoFakeClass = ["core-layout__content-infoFake"];
+  const menuClass = ["core-layout__content-menu"];
   if (isOpen) {
-    infoFakeClass.push('short');
-    menuClass.push('long');
+    infoFakeClass.push("short");
+    menuClass.push("long");
   }
   return (
     <div className="core-layout">
@@ -28,13 +28,10 @@ export default function CoreLayout() {
         <div className="core-layout__content-info">
           <Info />
         </div>
-        <div className={infoFakeClass.join(' ')}></div>
+        <div className={infoFakeClass.join(" ")}></div>
         <div className="core-layout__content-main">s</div>
-        <div className={menuClass.join(' ')}>
-          <Menu />
-          <button onClick={onToggle} style={{ color: 'white' }}>
-            button
-          </button>
+        <div className={menuClass.join(" ")}>
+          <Menu onToggle={onToggle} isOpen={isOpen} />
         </div>
       </div>
     </div>
