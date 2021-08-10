@@ -21,7 +21,7 @@
     }
     &-infoFake {
       width: 20%;
-      transition: width 1s;
+      transition: width 0.5s;
 
       &.short {
         width: 10% !important;
@@ -42,10 +42,10 @@
         rgba(30, 30, 40, 0.98) 0%,
         rgba(28, 28, 35, 0.98) 100%
       );
-      width: 5%;
+      width: 48px;
       transition: width 1s;
       &.long {
-        width: 15%;
+        width: 150px;
       }
     }
   }
