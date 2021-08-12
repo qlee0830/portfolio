@@ -1,4 +1,5 @@
 .menu {
+  padding:12px;
   background: linear-gradient(
     159deg,
     rgba(30, 30, 40, 0.98) 0%,
@@ -8,14 +9,97 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
-  &-btn {
-    width: 100%;
+width: 100%;
+  &-wrapper {
     display: flex;
-    flex-direction: column;
+
+    .menu-btn {
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
+
   &-name {
-    flex: 1;
-    margin-top: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+
+    &-content {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+
+      animation: fadeIn ease 1.8s;
+      -webkit-animation: fadeIn ease 1.8s;
+      -moz-animation: fadeIn ease 1.8s;
+      -o-animation: fadeIn ease 1.8s;
+      -ms-animation: fadeIn ease 1.8s;
+
+      a {
+        padding: 10px 0;
+        color: #999999;
+        text-decoration: none;
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-item {
+      margin: 20px;
+    }
+
+    &.rotation {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
