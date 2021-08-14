@@ -22,6 +22,7 @@ export default function CoreLayout() {
     infoFakeClass.push("short");
     menuClass.push("long");
   }
+  // Testing  
   return (
     <div className="core-layout">
       <div className="core-layout__content">
