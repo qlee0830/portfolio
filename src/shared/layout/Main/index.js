@@ -1,11 +1,11 @@
 import React from "react";
 
-import History from "./components/History";
+import Home from "../../../pages/Home";
 
 export default function Main() {
   return (
     <div className="main">
-      <History />
+      <Home />
     </div>
   );
 }
