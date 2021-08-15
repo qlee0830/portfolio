@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { CircularProgress, Box, Typography } from '@material-ui/core';
+import React, { useState, useEffect } from "react";
+import { CircularProgress, Box, Typography } from "@material-ui/core";
 
 export default function CircularProgressItem({ item }) {
   const [value, setValue] = useState(0);
@@ -7,7 +7,7 @@ export default function CircularProgressItem({ item }) {
     if (value < item.percentage) {
       setValue(value + 1);
     }
-  }, [value]);
+  }, [value, item.percentage]);
 
   return (
     <div className="circular-progress-item">
