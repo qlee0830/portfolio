@@ -1,5 +1,64 @@
-.Fragment {
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
+.event {
+  width: 320px;
+  margin-top: -5px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  background-color: rgb(43, 44, 53);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  position: relative;
+  &-header {
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .position {
+      color: rgb(153, 153, 153);
+    }
+    .timeframe {
+      width: 150px;
+      text-align: center;
+      padding: 0.5rem;
+      border-radius: 20px;
+      font-size: 0.8rem !important;
+      background: linear-gradient(
+        159deg,
+        rgba(30, 30, 40, 0.98) 0%,
+        rgba(28, 28, 35, 0.98) 100%
+      );
+    }
+  }
+
+  &-name {
+    font-size: 18px;
+    color: white;
+  }
+  &-paragraph {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    justify-content: left;
+  }
+
+  &-arrow {
+    position: absolute;
+    background-color: rgb(43, 44, 53);
+    width: 1rem;
+    height: 1rem;
+    top: 0.5rem;
+    transform: rotate(45deg);
+    &.left {
+      left: -0.28rem;
+    }
+    &.right {
+      right: -0.28rem;
+    }
+  }
+}
+.MuiTimelineSeparator-root {
+  .MuiTimelineDot-root {
+    background-color: #ffc107;
+  }
 }

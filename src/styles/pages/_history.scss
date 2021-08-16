@@ -3,12 +3,21 @@
   height: 100%;
   overflow-y: scroll;
   color: white;
+  display: flex;
   &-education {
+    .title {
+      padding-left: 75px;
+    }
     width: 50%;
-    float: left;
   }
   &-work {
+    .title {
+      padding-left: 235px;
+    }
     width: 50%;
-    float: left;
+  }
+
+  .MuiTimelineItem-root {
+    color: yellow;
   }
 }
