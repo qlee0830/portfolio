@@ -24,6 +24,9 @@
     &__basic {
       .basic-info {
         @include flexbox(space-between, center);
+        span {
+          color: #999999;
+        }
       }
     }
     &__languages {
