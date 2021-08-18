@@ -1,0 +1,23 @@
+.history {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  color: white;
+  display: flex;
+  &-education {
+    .title {
+      padding-left: 75px;
+    }
+    width: 50%;
+  }
+  &-work {
+    .title {
+      padding-left: 235px;
+    }
+    width: 50%;
+  }
+
+  .MuiTimelineItem-root {
+    color: yellow;
+  }
+}

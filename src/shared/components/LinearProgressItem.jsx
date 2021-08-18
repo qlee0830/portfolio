@@ -7,7 +7,7 @@ export default function LinearProgressItem({ item }) {
     if (value < item.percentage) {
       setValue(value + 0.1);
     }
-  }, [value]);
+  }, [value, item.percentage]);
 
   return (
     <div className="linear-progress-item">
