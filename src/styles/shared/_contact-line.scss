@@ -1,0 +1,19 @@
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  &-info {
+    font-size: 14px;
+    color: #999999;
+    a {
+      color: #999999;
+    }
+    a:active {
+      color: #999999;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+}

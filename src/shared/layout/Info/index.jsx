@@ -14,6 +14,7 @@ import BasicInfo from "./components/BasicInfo";
 import Languages from "./components/Languages";
 import CodingSkills from "./components/CodingSkills";
 import Contacts from "../../components/Contacts";
+import Pic from "../../../graduate-pic.jpeg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,13 +37,9 @@ export default function Info() {
   return (
     <div className="info">
       <div className="info-badge">
-        <Avatar
-          className={classes.large}
-          alt="Remy Sharp"
-          src="https://cdn.vox-cdn.com/thumbor/8euwZ9X8Mp64tTAbF3AxZdb_NG4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22657276/1322729766.jpg"
-        />
+        <Avatar className={classes.large} alt="Remy Sharp" src={Pic} />
         <h3>Quoc Ly</h3>
-        <span>Full-stack developer</span>
+        <span>Graduate Student</span>
       </div>
       <div className="info-general">
         <BasicInfo />
