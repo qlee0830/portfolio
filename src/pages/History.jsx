@@ -35,7 +35,7 @@ export default function History() {
         </Timeline>
       </div>
       <div className="history-work">
-        <h3 className="title">Work History</h3>
+        <h3 className="title">Projects</h3>
         <Timeline align="right">
           <Event
             name={data[3].name}
